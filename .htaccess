@@ -1,0 +1,28 @@
+# Smart Meeting System - Production Apache Configuration
+
+# 1. Default page
+DirectoryIndex index.php index.html
+
+# 2. Force HTTPS (Automatic SSL Redirection)
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteCond %{HTTPS} off
+    RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+</IfModule>
+
+# 3. Security: Block direct public access to sensitive files
+<FilesMatch "(^#.*#|\.(bak|config|sql|fla|psd|ini|log|sh|inc|swp|dist)|~)$">
+    Order allow,deny
+    Deny from all
+    Satisfy All
+</FilesMatch>
+
+# 4. Protect Database and Logs directories
+<IfModule mod_authz_core.c>
+    <Files "database/*.sql">
+        Require all denied
+    </Files>
+</IfModule>
+
+# 5. Enable UTF-8 encoding
+AddDefaultCharset UTF-8

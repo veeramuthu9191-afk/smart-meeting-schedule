@@ -1,0 +1,19 @@
+<?php
+/**
+ * Production Configuration Override
+ * Copy this file to 'production_config.php' on your production server
+ * and enter your free hosting MySQL credentials provided in your hosting cPanel.
+ *
+ * Example for InfinityFree:
+ * Host: sqlXXX.infinityfree.com (or sqlXXX.epizy.com)
+ * Username: if0_XXXXXXX
+ * Password: (Your vPanel account password)
+ * Database: if0_XXXXXXX_smart_meeting_db
+ * Port: 3306
+ */
+
+$db_host = 'sqlXXX.infinityfree.com'; // Your hosting MySQL Host
+$db_user = 'if0_XXXXXXX';            // Your hosting MySQL Username
+$db_pass = 'YOUR_HOSTING_PASSWORD';  // Your hosting MySQL Password
+$db_name = 'if0_XXXXXXX_smart_meeting_db'; // Your hosting Database Name
+$db_port = 3306;

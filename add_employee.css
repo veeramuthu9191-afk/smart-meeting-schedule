@@ -1,0 +1,79 @@
+body{
+    margin:0;
+    padding:0;
+    font-family:Arial, sans-serif;
+    background:#f2f5f9;
+}
+
+
+/* Center Box */
+
+.employee-box{
+
+    width:400px;
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 4px 15px gray;
+
+    margin:80px auto;
+}
+
+
+/* Form Labels */
+
+.employee-box label{
+
+    display:block;
+    text-align:left;
+    margin-bottom:8px;
+    font-weight:bold;
+    color:#333;
+
+}
+
+
+/* Input Fields */
+
+.employee-box input{
+
+    width:100%;
+    padding:12px;
+    margin-bottom:15px;
+
+    border:1px solid #ccc;
+    border-radius:6px;
+
+    box-sizing:border-box;
+
+}
+
+
+/* Button */
+
+.employee-box button{
+
+    width:100%;
+    background:#0066ff;
+    color:white;
+
+    border:none;
+    padding:12px;
+
+    border-radius:6px;
+    cursor:pointer;
+
+    font-size:16px;
+
+}
+
+
+.employee-box button:hover{
+
+    background:#004ccc;
+
+}
+.page-title{
+    text-align:center;
+    color:#333;
+}

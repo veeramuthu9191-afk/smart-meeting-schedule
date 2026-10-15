@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Create Account</title>
+
+    <link rel="stylesheet" href="signup.css">
+</head>
+
+<body>
+
+<div class="signup-container">
+
+    <h2>Create Account</h2>
+
+    <p>Smart Meeting Schedule and Workflow Management System</p>
+
+    <form action="signup.php" method="POST">
+
+        <label>Username</label>
+        <input type="text" name="name" placeholder="Enter Username" required>
+
+
+        <label>Phone Number</label>
+        <input type="tel" name="phone" placeholder="Enter Phone Number" required>
+
+
+        <label>Email Address</label>
+        <input type="email" name="email" placeholder="Enter Email Address" required>
+
+
+        <label>Role</label>
+        <select name="role" required>
+            <option value="">Select Role</option>
+            <option value="manager">Manager</option>
+            <option value="employee">Employee</option>
+        </select>
+
+
+        <label>Password</label>
+        <input type="password" name="password" placeholder="Enter Password" required>
+
+
+        <label>Confirm Password</label>
+        <input type="password" name="confirmPassword" placeholder="Confirm Password" required>
+
+
+        <button type="submit" name="submit" class="signup-btn">
+            Sign Up
+        </button>
+
+    </form>
+
+</div>
+
+</body>
+
+</html>
